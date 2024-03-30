@@ -1,0 +1,141 @@
+$primary : #21D375;
+$secondary : #6BBF59;
+$tertiary : #08A045;
+$light : #D8F3DC;
+$dark : #073B3A;
+
+
+.title {
+    width: 100%;
+    text-align: center;
+    background-color: $tertiary;
+    color: #ffff;
+    padding: 15px 0;
+
+    a {
+        color: #D8F3DC;
+        text-decoration: underline;
+    }
+}
+
+.nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+
+
+    h3{
+        color: $tertiary;
+    }
+
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        a:hover{
+            color: $tertiary;
+        }
+
+        .search {
+            position: relative;
+            width: auto;
+            border-radius: 12px;
+            border: solid 2px $tertiary;
+            overflow: hidden;
+            margin-left: 20px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            flex: 1 1 auto;
+
+            img {
+                position: absolute;
+                left: 10px;
+            }
+
+            input {
+                width: 100%;
+                border: none;
+                padding-left: 50px;
+                height: 100%;
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+
+    .collapsee {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-left: 20px;
+        }
+
+        button {
+            height: auto;
+            width: auto;
+            padding: 5px 15px;
+            margin-left: 10px;
+            border: solid 2px $tertiary;
+            border-radius: 8px;
+            background-color: #ffff;
+        }
+
+        button:hover {
+            color: #ffff;
+            border-radius: 8px;
+            background-color: $primary;
+            border: solid 2px $primary;
+        }
+    }
+}
+
+
+
+@media (min-width: 1150px) {
+    .nav {
+        .nav-toggler {
+            display: none;
+        }
+    }
+  }
+
+
+@media (max-width: 1150px) {
+    .nav {
+      
+        .collapsee{
+            display: none;
+        }
+
+        .search {
+            position: relative;
+            width: auto;
+            border-radius: 12px;
+            border: solid 2px $tertiary;
+            overflow: hidden;
+            margin-left: 20px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            width: 50px;
+            flex: 0 1 auto;
+
+            img {
+                position: absolute;
+                left: 10px;
+            }
+
+            input {
+                display: none;
+            }
+        }
+    }
+  }

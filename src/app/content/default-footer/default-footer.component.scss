@@ -1,0 +1,92 @@
+$primary : #21D375;
+$secondary : #6BBF59;
+$tertiary : #08A045;
+$light : #D8F3DC;
+$dark : #073B3A;
+
+.main{
+    width: 100vw;
+    height: auto;
+    padding: 30px 10%;
+    background-color: $dark;
+
+    h4{
+        color: #ffff;
+        border-bottom: solid 3px $light;
+        margin: 10px 0 20px;
+        font-weight: 700;
+    }
+
+    h6{
+        color: #ffff;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+
+    .hl{
+        width: 100%;
+        height: 3px;
+        background-color: $light;
+        margin: 30px 0;
+    }
+
+    .botom{
+        display: flex;
+
+        .logo{
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+
+            h3{
+                font-weight: 900;
+                color: $tertiary;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .socialmedia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        .cpt{
+            display: flex;
+
+            .vl{
+                height: 20px;
+                width: 2px;
+                background-color: $light;
+                margin: 0 20px;
+            }
+
+            a{
+                color: #ffff;
+            }
+
+            a:hover{
+                color: $light;
+            }
+        }
+
+        .copy{
+            margin: 10px 0;
+        }
+
+        .social{
+            img{
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .botom{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

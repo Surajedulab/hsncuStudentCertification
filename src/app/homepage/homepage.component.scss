@@ -1,0 +1,370 @@
+$primary : #21D375;
+$secondary : #6BBF59;
+$tertiary : #08A045;
+$light : #D8F3DC;
+$dark : #073B3A;
+
+
+.main {
+    width: 100vw;
+    overflow-y: hidden;
+
+    .title {
+        background-color: $dark;
+        display: flex;
+        align-items: center;
+        height: 65vh;
+        width: 100%;
+        padding: 0 10%;
+
+        .data {
+            flex: 1 1 auto;
+            color: #D8F3DC;
+        }
+
+        .img {
+            height: 60%;
+            width: 80%;
+            margin: 50px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .count {
+        height: 17vh;
+        width: 100%;
+        background-color: $light;
+        display: flex;
+        padding: 0 10%;
+        justify-content: space-between;
+
+        .data {
+            display: flex;
+            align-items: center;
+            opacity: 0.7;
+
+            .hl {
+                height: 50px;
+                width: 1px;
+                margin-left: 20px;
+                background-color: $dark;
+            }
+        }
+    }
+
+    .explore {
+        width: 100vw;
+        padding: 20px 10%;
+
+        .chips {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .data {
+            flex: 1 1 auto;
+            display: flex;
+            overflow-x: scroll;
+
+            h6 {
+                white-space: nowrap;
+                margin: 0 10px;
+                width: auto;
+                padding: 10px 15px;
+                text-align: center;
+                border-radius: 8px;
+            }
+
+            .selected {
+                background-color: $secondary;
+                color: #ffff;
+            }
+        }
+
+        .col-md-4{
+            padding: 30px;
+        }
+
+        .cards {
+
+            .card {
+
+                border-radius: 20px;
+                overflow: hidden;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                .cardimg {
+                    height: 200px;
+                    width: 100%;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        transition: transform 1s;
+                    }
+                }
+
+                .cbody {
+                    padding: 20px;
+
+                    .logo {
+                        display: flex;
+                        align-items: center;
+
+                        h3 {
+                            margin-left: 10px;
+                            font-weight: 900;
+                        }
+                    }
+
+                    .data {
+                        display: flex;
+                        align-items: center;
+                        margin: 10px 0;
+                        word-wrap: break-word;
+
+                        h6 {
+                            padding: 0;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: left;
+                        }
+
+                        .hl {
+                            height: 20px;
+                            width: 2px;
+                            margin-right: 10px;
+                            background-color: $dark;
+                        }
+
+                        p {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0;
+
+                        button {
+                            font-size: 15px;
+                            padding: 10px;
+                            border: solid 2px $tertiary;
+                            border-radius: 8px;
+                            background-color: #ffff;
+                        }
+
+                        button:hover {
+                            color: #ffff;
+                            border-radius: 8px;
+                            background-color: $primary;
+                            border: solid 2px $primary;
+                        }
+                    }
+
+                }
+            }
+
+            .card:hover {
+                .cardimg {
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            button {
+                font-size: 15px;
+                padding: 10px 30px;
+                border: solid 2px $tertiary;
+                border-radius: 8px;
+                color: $tertiary;
+                background-color: #ffff;
+            }
+
+            button:hover {
+                color: #ffff;
+                border-radius: 8px;
+                background-color: $primary;
+                border: solid 2px $primary;
+            }
+        }
+    }
+
+    .certificate {
+        background-color: $light;
+        width: 100vw;
+        height: auto;
+        padding: 30px 10%;
+        text-align: center;
+
+        .logo {
+            margin-top: 60px;
+
+            h1 {
+                font-weight: 900;
+                color: $tertiary;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .title {
+        .img {
+            display: none;
+        }
+    }
+
+    .count {
+        .data {
+            max-width: 20%;
+
+            h3 {
+                font-size: 15px;
+            }
+
+            h5 {
+                font-size: 10px;
+            }
+
+            .hl {
+                display: none;
+            }
+        }
+    }
+
+    .explore {
+
+        .col-md-4{
+            padding: 0;
+        }
+
+        .cards {
+
+            .card {
+
+                .cardimg {
+                    height: 150px;
+                    width: 100%;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        transition: transform 1s;
+                    }
+                }
+
+                .cbody {
+
+                    .logo {
+
+                        h3 {
+                            margin-left: 10px;
+                            font-weight: 900;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .data {
+
+                        h6 {
+                            padding: 0;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: left;
+                            font-size: 13px;
+                        }
+
+                        .hl {
+                            height: 20px;
+                            width: 2px;
+                            margin-right: 10px;
+                            background-color: $dark;
+                        }
+
+                        p {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .btn {
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0;
+
+                        button {
+                            font-size: 15px;
+                            padding: 10px;
+                            border: solid 2px $tertiary;
+                            border-radius: 8px;
+                            background-color: #ffff;
+                        }
+
+                        button:hover {
+                            color: #ffff;
+                            border-radius: 8px;
+                            background-color: $primary;
+                            border: solid 2px $primary;
+                        }
+                    }
+
+                }
+            }
+
+            .card:hover {
+                .cardimg {
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            button {
+                font-size: 15px;
+                padding: 10px 30px;
+                border: solid 2px $tertiary;
+                border-radius: 8px;
+                color: $tertiary;
+                background-color: #ffff;
+            }
+
+            button:hover {
+                color: #ffff;
+                border-radius: 8px;
+                background-color: $primary;
+                border: solid 2px $primary;
+            }
+        }
+    }
+}
